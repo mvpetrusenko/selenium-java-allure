@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import tests.UI.base.BaseUITest;
 
-
+import static com.codeborne.selenide.Selenide.$;
 
 
 public class SearchProduct extends BaseUITest {
@@ -43,11 +43,24 @@ public class SearchProduct extends BaseUITest {
 
     @Test
     public void testSearchProduct() {
-        WebDriver driver = new ChromeDriver();
-//                WebElement acceptCookies = driver.findElement(By.xpath("//*[@id=\"onetrust-accept-btn-handler\"]"));
-//
-        WebElement acceptCookies = driver.findElement(By.xpath("//button[@id='onetrust-accept-btn-handler']"));
-        acceptCookies.click();
+//        WebDriver driver = new ChromeDriver();
+////                WebElement acceptCookies = driver.findElement(By.xpath("//*[@id=\"onetrust-accept-btn-handler\"]"));
+////
+//        WebElement acceptCookies = driver.findElement(By.xpath("//button[@id='onetrust-accept-btn-handler']"));
+//        acceptCookies.click();
+
+
+
+        //$(By.xpath("//button[@id='onetrust-accept-btn-handler']")).click();
+
+
+
+
+
+
+
+
+
 
 
 //        WebElement search = driver.findElement(By.xpath("//a[contains(@href,'/search')]"));
