@@ -1,4 +1,4 @@
-package tests.UI.SearchProduct;
+package tests.UI.pages;
 
 //import java.util.concurrent.TimeUnit;
 
@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import tests.UI.base.BaseUITest;
 
+import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.$;
 
 
@@ -51,7 +52,16 @@ public class SearchProduct extends BaseUITest {
 
 
 
-        //$(By.xpath("//button[@id='onetrust-accept-btn-handler']")).click();
+       // $(By.xpath("//button[@id='onetrust-accept-btn-handler']")).click();
+
+        //By acceptButton = By.xpath("//button[@id='onetrust-accept-btn-handler']");
+
+//        String acceptButton = "//button[@id='onetrust-accept-btn-handler']";
+//        $(byXpath(acceptButton)).click();
+
+
+        //$(byXpath("//button[@id='onetrust-accept-btn-handler']")).click();
+        //$(acceptButton).click();
 
 
 
