@@ -2,6 +2,7 @@ package tests.UI.pages;
 
 import org.testng.annotations.Test;
 import tests.UI.base.BaseUITest;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.$;

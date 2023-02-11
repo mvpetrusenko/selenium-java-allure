@@ -7,17 +7,17 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.$;
 
-public class CreatePlaylist extends BaseUITest {
+public class SwitchLanguage extends BaseUITest {
+
 
     @Test
     public static void main(String[] args) {
         BaseUITest.main(args);
-        $(byXpath("//button[@class='IPVjkkhh06nan7aZK7Bx']")).click();
-        $(".tippy-content").shouldHave(text("Log in to create and share playlists."));
-        $(".tippy-content").shouldNotHave(text("aaaaaaaaa"));
+        $(byXpath("//button[@class='Button-sc-y0gtbx-0 eeRweB']")).click();
+        $(byXpath("//button[@id='uk']")).click();
 
-        $(byXpath("//button[normalize-space()='Not now']")).click();
-
+        $("a[href='/search']").shouldHave(text("Пошук"));
+        $("a[href='/search']").shouldNotHave(text("Search"));
 
     }
 }
