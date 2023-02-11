@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
 
 
+import static com.codeborne.selenide.Selectors.byXpath;
+import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 
@@ -20,6 +22,7 @@ public class BaseUITest {
         WebDriverRunner.setWebDriver(driver);
         WebDriverRunner.getWebDriver().manage().window().maximize();
         open("https://open.spotify.com/");
+        $(byXpath("//button[contains(@id,'onetrust-accept-btn-handler')]")).click();
 
     }
 }

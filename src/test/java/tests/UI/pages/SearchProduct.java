@@ -18,7 +18,9 @@ public class SearchProduct extends BaseUITest {
     @Test
     public void testSearchProduct() {
 
-        $(byXpath("//button[contains(@id,'onetrust-accept-btn-handler')]")).click();
+        //driver.findElement(By.xpath(xpath));
+
+        //$(byXpath("//button[contains(@id,'onetrust-accept-btn-handler')]")).click();
 
         //public static final String acceptCookies = "//button[contains(@id,'onetrust-accept-btn-handler')]";
 
