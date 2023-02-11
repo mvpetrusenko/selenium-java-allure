@@ -4,6 +4,8 @@ import com.codeborne.selenide.WebDriverRunner;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
+import tests.UI.pages.SearchProduct;
+import tests.restAPI.RestAssuredAPITest;
 
 
 import static com.codeborne.selenide.Selectors.byXpath;
@@ -23,6 +25,7 @@ public class BaseUITest {
         WebDriverRunner.getWebDriver().manage().window().maximize();
         open("https://open.spotify.com/");
         $(byXpath("//button[contains(@id,'onetrust-accept-btn-handler')]")).click();
+
 
     }
 }
