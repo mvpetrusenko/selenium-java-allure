@@ -1,4 +1,4 @@
 # selenium-java-allure
-project for AQA portfolio
+OK AQA portfolio
 
 
